@@ -1,0 +1,20 @@
+/* Bundled fonts: same look on every PC, even offline */
+@font-face{font-family:"Inter";font-weight:400;src:url("../assets/fonts/Inter-Regular.otf") format("opentype");font-display:swap}
+@font-face{font-family:"Inter";font-weight:500;src:url("../assets/fonts/Inter-Medium.otf") format("opentype");font-display:swap}
+@font-face{font-family:"Inter";font-weight:600;src:url("../assets/fonts/Inter-SemiBold.otf") format("opentype");font-display:swap}
+@font-face{font-family:"Inter";font-weight:700;src:url("../assets/fonts/Inter-Bold.otf") format("opentype");font-display:swap}
+@font-face{font-family:"Inter";font-weight:800;src:url("../assets/fonts/Inter-ExtraBold.otf") format("opentype");font-display:swap}
+:root{color-scheme:light;--p:#7c3aed;--pd:#5b21b6;--pl:#f3ebff;--ink:#1a1630;--mu:#6b6785;--ln:#ece8f7;--bg:#f6f4fc;--card:#fff;--ok:#059669;--warn:#d97706;--bad:#dc2626;
+--sh:0 1px 2px rgba(26,22,48,.05),0 10px 30px rgba(91,33,182,.07);--r:20px}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%;font-size:16px;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;font-family:"Inter",system-ui,"Segoe UI",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+button,input,select,textarea{font:inherit;color:inherit}button{cursor:pointer;border:0;background:none}
+h1,h2,h3,h4,p{margin:0}[hidden]{display:none!important}
+.ic{flex-shrink:0;vertical-align:middle}
+@keyframes up{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+@keyframes float{50%{transform:translateY(-8px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes grow{from{width:0}}
+@keyframes shake{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
